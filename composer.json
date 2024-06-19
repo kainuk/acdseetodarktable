@@ -1,0 +1,13 @@
+{
+    "require": {
+        "symfony/console": "^6.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "AcdDarktable\\": "src"
+        },
+        "classmap": [
+            "src"
+        ]
+    }
+}
