@@ -1,6 +1,8 @@
 {
     "require": {
-        "symfony/console": "^6.4"
+        "symfony/console": "^6.4",
+        "symfony/finder": "^6.4",
+      "ext-simplexml": "*"
     },
     "autoload": {
         "psr-4": {

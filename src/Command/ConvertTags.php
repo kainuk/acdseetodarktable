@@ -12,11 +12,11 @@ use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Finder\Finder;
 
-class ShowTags extends Command {
+class ConvertTags extends Command {
 
   protected function configure(): void
   {
-    $this->setName('showtags')
+    $this->setName('converttags')
       ->setDescription('Show the tags of an AcdSee file')
       ->addArgument('dir',InputArgument::OPTIONAL,'Directory to start the scanning','.')
       ->addOption('recursive','R', InputOption::VALUE_NONE, 'Process subdirectories')
@@ -43,7 +43,7 @@ class ShowTags extends Command {
   protected function execute(InputInterface $input, OutputInterface $output): int
   {
     $output->writeln([
-         'Executing ShowTags ......',
+         'Executing ConvertTags ......',
          'Starting in directory '.$input->getArgument('dir')
       ]
     );
@@ -61,19 +61,13 @@ class ShowTags extends Command {
         $acdSeeXmp->registerXPathNamespace('acdsee', 'http://ns.acdsee.com/iptc/1.0/');
         //$output->writeln($acdSeeXmpFileName);
         foreach($acdSeeXmp->xpath('//acdsee:categories') as $categories) {
-          $result = $this->extractPeople((string) $categories, $output);
-          if(!empty($result)){
-            $people = array_merge($people,$result);
-          }
+          $people = $this->extractPeople((string) $categories, $output);
+          Utils::addPerson($file->getRealPath(), $people);
         }
       }
     }
     $progressBar->finish();
-    $output->writeln("");
-    foreach($people as $person){
-      $output->writeln($person);
-    }
-
+    $output->writeln("\nDone");
     return Command::SUCCESS;
   }
 }

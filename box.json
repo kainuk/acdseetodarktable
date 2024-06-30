@@ -1,0 +1,20 @@
+{
+  "chmod": "0755",
+  "directories": [
+    "src"
+  ],
+  "finder": [
+    {
+      "name": "*.php",
+      "exclude": ["phpunit", "Tests", "Test", "tests", "test"],
+      "in": "vendor"
+    },
+    {
+      "name": "completion.*",
+      "in": "vendor/symfony/console/Resources"
+    }
+  ],
+  "main": "acdseetodarktable.php",
+  "output": "acdseetodarktable.phar",
+  "stub": true
+}
