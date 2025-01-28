@@ -19,25 +19,8 @@ class ShowTags extends Command {
     $this->setName('showtags')
       ->setDescription('Show the tags of an AcdSee file')
       ->addArgument('dir',InputArgument::OPTIONAL,'Directory to start the scanning','.')
-      ->addOption('recursive','R', InputOption::VALUE_NONE, 'Process subdirectories')
+      ->addOption('filter','F', InputOption::VALUE_OPTIONAL, 'Filter')
     ;
-  }
-  protected function extractPeople(string $categories, OutputInterface $output) : array {
-    if(empty($categories)){
-      return [];
-    }
-    $result = [];
-    /* @var SimpleXMLElement $peopleXml */
-    $peopleXml = new SimpleXMLElement($categories);
-    foreach($peopleXml->xpath('/Categories/Category') as $category){
-      $categoryContent = (string) $category;
-      if($categoryContent=='People'){
-        foreach($category->xpath('Category') as $person){
-          $result[(string) $person]=(string) $person;
-        }
-      }
-    }
-    return $result;
   }
 
   protected function execute(InputInterface $input, OutputInterface $output): int
@@ -61,9 +44,12 @@ class ShowTags extends Command {
         $acdSeeXmp->registerXPathNamespace('acdsee', 'http://ns.acdsee.com/iptc/1.0/');
         //$output->writeln($acdSeeXmpFileName);
         foreach($acdSeeXmp->xpath('//acdsee:categories') as $categories) {
-          $result = $this->extractPeople((string) $categories, $output);
+          $result = Utils::extractRootCategory((string) $categories);
+          if($input->hasOption('filter')){
+            $result = array_filter($result, function($v) use ($input) { return str_starts_with($v,$input->getOption('filter'));});
+          }
           if(!empty($result)){
-            $people = array_merge($people,$result);
+            $people = array_unique(array_merge($people,$result));
           }
         }
       }
@@ -73,7 +59,8 @@ class ShowTags extends Command {
     foreach($people as $person){
       $output->writeln($person);
     }
-
     return Command::SUCCESS;
   }
+
+
 }

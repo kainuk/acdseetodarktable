@@ -19,7 +19,7 @@ class ConvertTags extends Command {
     $this->setName('converttags')
       ->setDescription('Show the tags of an AcdSee file')
       ->addArgument('dir',InputArgument::OPTIONAL,'Directory to start the scanning','.')
-      ->addOption('recursive','R', InputOption::VALUE_NONE, 'Process subdirectories')
+      ->addOption('filter','F', InputOption::VALUE_OPTIONAL, 'Filter')
     ;
   }
   protected function extractPeople(string $categories, OutputInterface $output) : array {
@@ -61,8 +61,13 @@ class ConvertTags extends Command {
         $acdSeeXmp->registerXPathNamespace('acdsee', 'http://ns.acdsee.com/iptc/1.0/');
         //$output->writeln($acdSeeXmpFileName);
         foreach($acdSeeXmp->xpath('//acdsee:categories') as $categories) {
-          $people = $this->extractPeople((string) $categories, $output);
-          Utils::addPerson($file->getRealPath(), $people);
+          $result = Utils::extractRootCategory((string) $categories);
+          if($input->hasOption('filter')){
+            $result = array_filter($result, function($v) use ($input) { return str_starts_with($v,$input->getOption('filter'));});
+          }
+          if(!empty($result)) {
+            Utils::convert($file->getRealPath(), $result);
+          }
         }
       }
     }

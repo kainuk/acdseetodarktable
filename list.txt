@@ -1,0 +1,181 @@
+Executing ShowTags ......
+Starting in directory /media/klaas/Samsung_T5/FotosCompleet
+Found 22587 files
+
+People|Paula
+People|Froukje
+People|Rivka
+People|Dagmar
+People|Simone
+Familie|2006|Algemeen
+Onderwerpen|Keinder|Uitvoering
+Onderwerpen|Keinder|Knutselwerken
+Familie|2007|Algemeen
+Onderwerpen|BlauweTulp|Onbedwingbare Tijd
+Familie|2007|Froukje Iphigenia
+Onderwerpen|BlauweTulp|Nacht van Herodes
+Projecten|Bretange
+Familie|2008|Vakantie Denemarken
+People|Mirjam
+Familie|2008|40jaar huwelijk Hans en Annie
+Projecten|2022 - boekje svisser
+People|Hans Visser
+Familie|2009|Muziek
+Familie|2009|Vakantie Normandie
+Onderwerpen|BlauweTulp|Getuigenissen
+Familie|2010|Youth Alpha
+Familie|2010|Vakantie Normandie
+Familie|2010|Vakantie2010
+Familie|2011|Winter
+Familie|2011|Voorjaarsconventie
+Familie|2011|Vakantie Engeland
+Familie|2012|Lichtverven Froukje
+Familie|2012|Kenia
+Albums|Boekje-Visser
+Plaatsen|Amboselli
+Onderwerpen|BlauweTulp|Opstand in Sobibor Reprise
+Fotograaf|Rivka
+Onderwerpen|Toneel|Froukje Vuurvogel
+Familie|2013|Vakantie Wales
+Onderwerpen|Toneel|Overig
+Familie|2013|Diversen
+Onderwerpen|Culemborg
+Familie|2013|Klussen bij Anna
+Onderwerpen|Miniaturen
+Onderwerpen|NGK Culemborg|2013 Open Podium
+Onderwerpen|Snel Licht
+Onderwerpen|ChristenUnie
+Familie|2013|Verjaardag Paula
+Onderwerpen|ChristenUnie|CU 2013 FotoShoot Dec
+Familie|2013|Kerst Oud en Nieuw
+Onderwerpen|NGK Culemborg
+Familie|2013|Sinterklaas
+Onderwerpen|RICM
+Onderwerpen|ChristenUnie|CU 2014 Bezoek Seegers
+Onderwerpen|ChristenUnie|CU 2014 Installatie
+Onderwerpen|ChristenUnie|CU 2014 Verkiezingsdebat
+Onderwerpen|NGK Culemborg|2014 Jeugddienst
+Familie|2014|Ziekenhuis Annie
+Onderwerpen|ChristenUnie|CU 2014 Folderen Europese Verkiezingen
+Familie|2014|Gala Froukje
+Familie|2014|Vakantie Ameland
+Onderwerpen|ChristenUnie|CU 2014 Algemene Ledenvergadering
+Onderwerpen|NGK Culemborg|2014 Luister
+Onderwerpen|NGK Culemborg|2014 Startzondag
+Familie|2014|Vakantie Hongarije
+Onderwerpen|ChristenUnie|CU 2014 Benoemen Nieuwe Steunfractie Leden
+Familie|2014|RICM Georgia
+Familie|2014|Dutch Design
+Familie|2014|James Bond
+Onderwerpen|ChristenUnie|CU 2015 Je Suis Charlie
+Onderwerpen|Tuin
+Onderwerpen|NGK Culemborg|2015 Kampeerweekend
+Familie|2015|Evian
+Familie|2015|Nancy
+Familie|2015|Taize
+Onderwerpen|NGK Culemborg|2015 Monumenten Dag
+Onderwerpen|Alpha NGK RKK
+Familie|2015|Algemeen
+Familie|2015|kerstfeest
+Onderwerpen|NGK Culemborg|2015 Sing In
+Familie|2016|Nieuwjaar Antwerpen
+Onderwerpen|ChristenUnie|CU 2016 Ledenvergadering
+People|Jalke
+Familie|2016|Antwerpen Hargrave
+Onderwerpen|Coursera - Photagraphy and Beyond
+Onderwerpen|Pieter Aafjes
+Onderwerpen|Pieter Aafjes|2016 Dodenherdenking
+People|Assad
+People|Sjoerd
+People|Dora
+Onderwerpen|ChristenUnie|CU 2016 FotoShoot
+Onderwerpen|ChristenUnie|CU 2016 Raadzaal
+Projecten|10-Black-and-White
+Onderwerpen|NGK Culemborg|2016 Kampeerweekend
+Onderwerpen|Pieter Aafjes|2016 Sprookjes Orkest
+People|Klaas
+Familie|2016|Vakantie Kent
+Familie|2016|Diversen
+Projecten|11-Landscape
+Onderwerpen|Kidogo
+Onderwerpen|Portret
+Projecten|14-fmspod
+People|Elbert
+Familie|2016|12-Kerst
+Onderwerpen|ChristenUnie|CU 2017 Nieuwjaars Inloop
+Onderwerpen|CiviCRM|Civi 2017 FosDem
+Fotograaf|Paula
+Onderwerpen|Unexpected Landmarks
+Onderwerpen|CiviCRM|Civi 2017 CivCologne
+Familie|2017|2017 Fermaville
+Familie|2017|2017 Reims
+Familie|2017|2017 Taize
+Familie|2017
+Onderwerpen|CiviCRM|Civi 2018 CiviCon Brussel
+Onderwerpen|ChristenUnie|CU 2018 Verkiezings debat
+Onderwerpen|ChristenUnie|CU 2018 GMR Verkiezingen
+Onderwerpen|CiviCoop
+Projecten|365 - Ieder dag een foto
+Onderwerpen
+Familie|2018|2018 Trip Antwerpen
+Onderwerpen|365
+Onderwerpen|Burger Initiatief|2018 - zomeraktie Andropov
+Onderwerpen|ChristenUnie|CU 2018 Fotoshoot bestuur
+Onderwerpen|ChristenUnie|CU 2018 Zomerborrel
+People|Paco
+Onderwerpen|CiviCRM|Civi 2018 MeetUp Antwerpen
+Familie|2018|2018 Vakantie Etretat
+Onderwerpen|Burger Initiatief|2018 Reguliere Wake Zeist
+Onderwerpen|Aktievoeren|KerkAsiel
+Onderwerpen|Aktievoeren
+Onderwerpen|ChristenUnie|CU 2019 Verkiezingen PVS
+Onderwerpen|Aktievoeren|2019 - Wake Zeist
+Onderwerpen|CiviCRM|Civi 2019 CiviDay Amsterdam
+Onderwerpen|CiviCRM|Civi 2019 CiviSprint Ede
+Onderwerpen|ChristenUnie|CU 2019 Verkiezingen EU
+Familie|2019|2019 Gala Paula
+Familie|2019|2019 Taize
+Onderwerpen|Burger Initiatief|2019 Extra Wakes
+Familie|2019|2019 Vakantie Italië
+Onderwerpen|Burger Initiatief|2019 - Regulier Wakes
+Familie|2019|2019 - Reis Zweden
+Onderwerpen|Broodfonds|2019 ALV
+Onderwerpen|CwnCwj|2011|2011 Bestuursweekend CWJ Bestuur
+Onderwerpen|CwnCwj|2012|Chakika 1
+Fotograaf|Klaas
+Onderwerpen|CwnCwj|2012|2012-www
+Onderwerpen|CwnCwj|2012|Conventie NJ 2012
+Onderwerpen|CwnCwj|Afbeeldingen
+Fotograaf|Froukje
+Onderwerpen|Toneel|Froukje Hotel te Koop
+Onderwerpen|Aktievoeren|2020 - Wake Zeist
+Onderwerpen|Huisdieren|Falco
+Onderwerpen|In het huis
+Projecten|SubstanceOfCulemborg
+Onderwerpen|ChristenUnie|CU 2020 Algemene Ledenvergadering
+Onderwerpen|Aktievoeren|2020 - 500 kinderen
+Familie|2020|2020 Familie weekend Katwijk
+Familie|2020|2020 Vakantie Normandië
+Onderwerpen|Administratie|Belasting Aangifte Dora
+Onderwerpen|Bloemen
+Familie|2020|2020 - 08 - uilenpark
+Projecten|Voorraad
+People|Falco
+Onderwerpen|ChristenUnie|CU 2021 Plakken Landelijke verkiezingen
+Onderwerpen|Aktievoeren|LopenVuur2021
+Onderwerpen|Aktievoeren|2021 - Lopend Vuur
+Onderwerpen|Aktievoeren|2021 - Wake Zeist
+People|Jaap Jansma
+Familie|2021|2021 Famillie Weekend Den Haag
+Familie|2021|2021 Vakantie Normandie
+Onderwerpen|Dillenburglaan
+Projecten|De hel
+Onderwerpen|Aktievoeren|2022 - Wake Zeist
+Onderwerpen|Keinder|Knutselwerken|Knustelwerk Rivka
+Onderwerpen|ChristenUnie|CU 2022 Campagne GMR
+Onderwerpen|CiviCRM|Civi 2022 CiviSprint Otterloo
+Projecten|The Ritual
+Familie|2022|2022 Vakantie Bretagne
+Onderwerpen|Aktievoeren|MiGreat
+Projecten|Bellweg
+Onderwerpen|Kunstwerk|Simone

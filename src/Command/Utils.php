@@ -30,33 +30,66 @@ class Utils {
     return $result;
   }
 
-  public static function addPerson(string $fileName, array $persons) {
-    $hierarchyPersons = array_map(
-      function ($s) {
-        return "Personen|$s";
-      },
-      $persons
-    );
+  public static function convert(string $fileName, array $hierarchyNew) {
+    $tags = [];
+    foreach($hierarchyNew as $newTags){
+      $tags = array_unique($tags+explode('|',$newTags));
+    }
     $touched = false;
-    $persons = array_merge(['Personen'], $persons);
+    $tags = array_merge(['Personen'], $tags);
     $xml = simplexml_load_file($fileName . '.xmp');
     $description = $xml->children('rdf', TRUE)->RDF->Description;
     $subject = Utils::ensure($description, 'http://purl.org/dc/elements/1.1/', 'subject');
     $bag = Utils::ensure($subject, 'http://www.w3.org/1999/02/22-rdf-syntax-ns#', 'Bag');
     $currentPersons = Utils::arrayFromXml($bag, 'rdf:li');
-    foreach (array_diff($persons, $currentPersons) as $person) {
+    foreach (array_diff($tags, $currentPersons) as $person) {
       $bag->addChild('li', $person);
     }
     $hierarchy = Utils::ensure($description, 'http://ns.adobe.com/lightroom/1.0/', 'hierarchicalSubject');
     $hierarchyBag = Utils::ensure($hierarchy, 'http://www.w3.org/1999/02/22-rdf-syntax-ns#', 'Bag');
     $currentHierarchyPersons = Utils::arrayFromXml($hierarchyBag, 'rdf:li');
-    foreach (array_diff($hierarchyPersons, $currentHierarchyPersons) as $person) {
+    foreach (array_diff($hierarchyNew, $currentHierarchyPersons) as $person) {
       $hierarchyBag->addChild('li', $person);
       $touched = true;
     }
     if($touched) {
       $xml->asXML($fileName . '.xmp');
     }
+  }
+
+  /**
+   * @param mixed $category
+   * @param array $result
+   *
+   * @return array
+   */
+  public static function extractCategory(SimpleXMLElement $category): array {
+    $content = (string) $category;
+    $result = [];
+    foreach($category->xpath('Category') as $child){
+      $result = $result + self::extractCategory($child);
+    };
+    if(empty($result)){
+      $result = [$content];
+    } else {
+      $result = array_map(function ($s) use ($content) {
+        return "$content|$s";
+      },$result);
+    }
+    return $result;
+  }
+
+  public static function extractRootCategory(string $categories): array {
+    if (empty($categories)) {
+      return [];
+    }
+    /* @var SimpleXMLElement $peopleXml */
+    $peopleXml = new SimpleXMLElement($categories);
+    $result = [];
+    foreach ($peopleXml->xpath('/Categories/Category') as $category) {
+      $result = Utils::extractCategory($category);
+    }
+    return $result;
   }
 
 }

@@ -22,7 +22,7 @@ class AddPerson extends Command {
 
   protected function execute(InputInterface $input, OutputInterface $output): int {
      $persons = explode(',',$input->getArgument('person'));
-     Utils::addPerson($input->getArgument('file'), $persons);
+     Utils::convert($input->getArgument('file'), $persons);
      return Command::SUCCESS;
   }
 
